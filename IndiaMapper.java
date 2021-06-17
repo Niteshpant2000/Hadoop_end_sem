@@ -23,7 +23,7 @@ String inputstring = value.toString();
 for(String x : inputstring.split(" "))
 	
 {	String p=x.toLowerCase();
-	if(p.equals("india") || p.equals("india.") || p.equals("india,")){
+	if(p.contains("india")){
 		context.write(new Text("india"),new IntWritable(1));
 		
 	}
